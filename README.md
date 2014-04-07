@@ -4,8 +4,8 @@ Apache+PHP build pack
 This is a build pack bundling PHP and Apache for Heroku apps.
 
 **Features:**
-* PHP 5.5.4 (PHP-FPM)
-* Apache HTTP Server 2.4.6
+* PHP 5.5.11 (PHP-FPM)
+* Apache HTTP Server 2.4.9
 * Composer Support
 * Opcache Enabled
 * PECL Memcached
@@ -13,6 +13,7 @@ This is a build pack bundling PHP and Apache for Heroku apps.
 * igbinary support
 * mcrypt support (to support Laravel 4)
 * PostgreSQL support
+* MongoDB support
 
 Configuration
 -------------
@@ -24,7 +25,7 @@ The config files are bundled with the buildpack itself:
 
 Configure Heroku to use this buildpack repo AND branch
 
-    $ heroku config:set BUILDPACK_URL=git@github.com:githubjeka/HerokuBuildPack.git#mpm-event-php55-fpm
+    $ heroku config:set BUILDPACK_URL=git://github.com/githubjeka/HerokuBuildPack.git#mpm-event-php55-fpm
 
 This buildpack also supports custom Document Roots in your application. Simply add an environment variable. If your document root is public in the root of your repo, then run
     
