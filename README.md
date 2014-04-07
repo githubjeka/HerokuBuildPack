@@ -25,11 +25,11 @@ The config files are bundled with the buildpack itself:
 
 Configure Heroku to use this buildpack repo AND branch
 
-    $ heroku config:set BUILDPACK_URL=https://github.com/githubjeka/heroku-buildpack
+    $ heroku config:set BUILDPACK_URL=git://github.com/githubjeka/heroku-buildpack.git#mpm-event-php55-fpm
 
 This buildpack also supports custom Document Roots in your application. Simply add an environment variable. If your document root is public in the root of your repo, then run
     
-    $ heroku config:set WWWROOT=/web
+    $ heroku config:set WWWROOT=/public
 
 Composer
 --------
